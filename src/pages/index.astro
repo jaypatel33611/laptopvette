@@ -240,9 +240,9 @@ const affiliateMacBookAir = "https://www.amazon.com/s?k=Apple+MacBook+Air+M+Seri
 
   /* High Intent Top Picks Section */
   .top-picks { padding: 60px 0 30px 0; }
-  .section-title-wrap { text-align: center; margin-bottom: 40px; }
+  .section-title-wrap { text-align: center; margin-bottom: 40px; max-width: 840px; margin-left: auto; margin-right: auto; }
   .section-title-wrap h2 { font-size: 28px; }
-  .picks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+  .picks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 840px; margin: 0 auto; }
   .pick-card { background: #ffffff; border: 2px solid #d1d5db; border-radius: 12px; padding: 30px; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
   .best-overall { border-color: #b91c1c; }
   .pick-badge { position: absolute; top: -15px; left: 20px; background: #111827; color: #ffffff; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 20px; }
@@ -253,26 +253,28 @@ const affiliateMacBookAir = "https://www.amazon.com/s?k=Apple+MacBook+Air+M+Seri
   .pick-features li { font-size: 14px; color: #1f2937; margin-bottom: 8px; }
 
   .recommendations { padding: 50px 0; }
-  .recommendation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px; }
+  .recommendations .section-title-wrap { max-width: 840px; margin-left: auto; margin-right: auto; }
+  .recommendation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px; max-width: 840px; margin-left: auto; margin-right: auto; }
   .recommendation-card { background: #ffffff; border: 1px solid #d1d5db; border-radius: 14px; padding: 28px; }
   .recommendation-badge { display: inline-block; margin-bottom: 16px; background: #111827; color: #ffffff; padding: 6px 12px; border-radius: 9999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
   .recommendation-card h3 { font-size: 20px; margin-bottom: 12px; }
   .recommendation-card h3 a { color: #111827; text-decoration: none; }
   .recommendation-card p { color: #334155; font-size: 14px; line-height: 1.6; }
 
-  .featured-topic-subsection { margin: 30px 0 40px 0; }
+  .featured-topic-subsection { margin: 30px auto 40px auto; max-width: 840px; }
   .featured-topic-subsection h3 { font-size: 22px; margin-bottom: 12px; }
   .featured-topic-subsection p { color: #475569; font-size: 15px; margin-bottom: 24px; }
-  .featured-topic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .featured-topic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 100%; }
   .featured-topic-card { background: #ffffff; border: 1px solid #d1d5db; border-radius: 14px; padding: 26px; }
   .featured-topic-card h4 { font-size: 18px; margin-bottom: 12px; }
   .featured-topic-card p { color: #334155; font-size: 14px; line-height: 1.7; }
 
   /* Content Feed Section */
   .content-section { padding: 50px 0 80px 0; width: 100%; }
+  .content-section .section-title-wrap { max-width: 840px; margin-left: auto; margin-right: auto; }
   .section-heading { font-size: 24px; margin-bottom: 30px; border-left: 4px solid #b91c1c; padding-left: 15px; }
   /* Content feed grid: match Buying Guides grid so tiles stay horizontal on wide screens */
-  .content-section .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .content-section .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 840px; margin: 0 auto; }
   @media (max-width: 900px) { .content-section .articles-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 768px) { .content-section .articles-grid { grid-template-columns: 1fr; } }
   .post-card { 
