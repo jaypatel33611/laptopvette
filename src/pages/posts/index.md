@@ -1,10 +1,6 @@
 ---
 title: Using Decap CMS with an Astro site
-pubDate: 2022-05-16
-author: Advanced Astro
-authorURL: https://advanced-astro.dev
-description: How to get started using Decap CMS to manage your Astro site’s content
-layout: ../../layouts/BlogPost.astro
+description: How to get started using Decap CMS to manage your Astro site's content
 ---
 [Decap CMS](https://decapcms.org/) is an open-source, Git-based content management system.
 It provides a single-page app for editing content and can publish that content by committing it to a hosted Git repo (for example on GitHub or GitLab).
