@@ -1,0 +1,70 @@
+---
+// Laptop accessory recommendations for general laptop buyers
+import BaseHead from '../components/BaseHead.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Laptop Accessories & Add-ons | LaptopVette"
+    description="The most useful laptop accessories for everyday buyers, including protective cases, mice, headsets, and charging solutions."
+    path="/accessories"
+    type="article"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo">Laptop<span>Vette</span></a>
+    </div>
+  </nav>
+
+  <main class="article-container">
+    <header class="article-header">
+      <span class="category-tag">Accessories</span>
+      <h1>Most Common Laptop Accessories</h1>
+      <p class="byline">Essential add-ons that help protect devices, improve productivity, and support everyday laptop use.</p>
+    </header>
+
+    <section class="accessory-list">
+      <h2>Top Laptop Accessories</h2>
+      <ul>
+        <li><strong>Protective laptop sleeve or case:</strong> Guards against drops, scratches, and travel wear.</li>
+        <li><strong>Spill-resistant keyboard cover:</strong> Helps keep liquids and crumbs out of sensitive keys.</li>
+        <li><strong>External wireless mouse:</strong> Improves precision for everyday tasks and creative workflows.</li>
+        <li><strong>USB-C hub or docking station:</strong> Adds extra ports for displays, USB devices, and SD cards.</li>
+        <li><strong>Noise-cancelling headset:</strong> Supports focused work in shared spaces and remote meetings.</li>
+        <li><strong>Portable charger or power bank:</strong> Extends battery life for work, travel, and long use sessions.</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>Why These Accessories Matter</h2>
+      <p>Laptops move between home, work, and travel. The right accessories protect devices and make computing more comfortable and efficient without adding unnecessary complexity.</p>
+    </section>
+
+    <section class="cta-section">
+      <a href="/back-to-school-laptops" class="btn btn-primary">Return to Laptop Buying Guides</a>
+    </section>
+  </main>
+</body>
+</html>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.75; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .navbar { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 20px 0; }
+  .logo { font-size: 22px; font-weight: 700; text-decoration: none; color: #0f172a; }
+  .logo span { color: #b91c1c; }
+  .article-container { max-width: 860px; margin: 50px auto; padding: 40px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; }
+  .category-tag { color: #b91c1c; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px; }
+  h1 { font-size: 34px; margin: 15px 0; }
+  .byline { color: #475569; font-size: 15px; margin-bottom: 25px; }
+  .accessory-list h2, .detail-section h2 { font-size: 22px; margin-bottom: 16px; }
+  .accessory-list ul { margin-left: 20px; color: #334155; }
+  .accessory-list li { margin-bottom: 14px; font-size: 15px; }
+  .detail-section { margin-top: 30px; }
+  .btn-primary { display: inline-block; background: #b91c1c; color: #ffffff; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+  .btn-primary:hover { background: #991b1b; }
+</style>

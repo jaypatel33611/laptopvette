@@ -1,0 +1,67 @@
+---
+// Insurance and warranty recommendations for laptop users
+import BaseHead from '../components/BaseHead.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="Insurance & Warranty Plans for Laptops | LaptopVette"
+    description="Laptop insurance and warranty plans for buyers who want protection from drops, spills, and hardware issues."
+    path="/insurance-warranty"
+    type="article"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo">Laptop<span>Vette</span></a>
+    </div>
+  </nav>
+
+  <main class="article-container">
+    <header class="article-header">
+      <span class="category-tag">Protection</span>
+      <h1>Best Insurance & Warranty Plans for Laptops</h1>
+      <p class="byline">Coverage options that protect laptops from accidents, spills, and hardware failures.</p>
+    </header>
+
+    <section class="summary-section">
+      <h2>Recommended Coverage Types</h2>
+      <ul>
+        <li><strong>Accidental damage protection:</strong> Covers drops, spills, and cracked screens.</li>
+        <li><strong>Extended warranty:</strong> Adds extra years of hardware coverage beyond the manufacturer warranty.</li>
+        <li><strong>Theft protection:</strong> Provides replacement support if a laptop is lost or stolen.</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>Why Coverage Matters for Laptop Owners</h2>
+      <p>Laptops can be vulnerable to drops, spills, and everyday accidents. Insurance and warranty plans help protect your investment and reduce repair costs.</p>
+    </section>
+
+    <section class="cta-section">
+      <a href="/back-to-school-laptops" class="btn btn-primary">Return to Laptop Buying Guides</a>
+    </section>
+  </main>
+</body>
+</html>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.75; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .navbar { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 20px 0; }
+  .logo { font-size: 22px; font-weight: 700; text-decoration: none; color: #0f172a; }
+  .logo span { color: #b91c1c; }
+  .article-container { max-width: 860px; margin: 50px auto; padding: 40px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; }
+  .category-tag { color: #b91c1c; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px; }
+  h1 { font-size: 34px; margin: 15px 0; }
+  .byline { color: #475569; font-size: 15px; margin-bottom: 25px; }
+  .summary-section, .detail-section { margin-bottom: 30px; }
+  .summary-section h2, .detail-section h2 { font-size: 22px; margin-bottom: 16px; }
+  .summary-section ul { margin-left: 20px; color: #334155; }
+  .summary-section li { margin-bottom: 14px; font-size: 15px; }
+  .btn-primary { display: inline-block; background: #b91c1c; color: #ffffff; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+  .btn-primary:hover { background: #991b1b; }
+</style>

@@ -1,0 +1,89 @@
+---
+// src/pages/ultimate-creator-laptops.astro
+import BaseHead from '../components/BaseHead.astro';
+const affiliateCreatorWorkstation = "https://www.amazon.com/s?k=16-inch+workstation+laptop&tag=laptopvette-20";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <BaseHead
+    title="The Ultimate Creator Laptops of 2026 - LaptopVette"
+    description="A deep-dive review of the best creator laptops of 2026, covering performance, display, and workflow suitability."
+    path="/ultimate-creator-laptops"
+    type="article"
+  />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container"><a href="/" class="logo">Laptop<span>Vette</span></a></div>
+  </nav>
+
+  <article class="article-container">
+    <header class="article-header">
+      <span class="category-tag">Buying Guides</span>
+      <h1>The Ultimate Creator Laptops of 2026: Deep Dive Review</h1>
+      <p class="byline">Published July 2026 • 12 Min Read</p>
+    </header>
+
+    <div class="disclosure-box">
+      <p><strong>Disclaimer:</strong> LaptopVette is an independent site. When you purchase through links on this page, we may earn an affiliate commission at no extra cost to you.</p>
+    </div>
+
+    <section class="review-block">
+      <h2>1. Premium Workstation 16" (Best Overall)</h2>
+      <p>The clear winner for intensive video editing and 3D modeling pipelines this year. During heavy rendering loops, its thermal configuration kept noise down while maintaining high boost clocks.</p>
+      
+      <div class="specs-table">
+        <h4>Technical Specifications</h4>
+        <ul>
+          <li><strong>Processor:</strong> M5 Max (16-Core CPU, 40-Core GPU)</li>
+          <li><strong>Memory:</strong> 64GB Unified Architecture</li>
+          <li><strong>Storage:</strong> 2TB PCIe NVMe SSD</li>
+          <li><strong>Display:</strong> 16.2-inch Liquid Retina XDR (120Hz Mini-LED)</li>
+        </ul>
+      </div>
+
+      <div class="action-box">
+        <div>
+          <h3>Ready to buy the Premium Workstation 16"?</h3>
+          <p>Check current pricing and customer reviews through the retailer links provided.</p>
+        </div>
+        <a href={affiliateCreatorWorkstation} target="_blank" rel="noopener noreferrer sponsored nofollow" aria-label="Check pricing on Amazon (affiliate)" class="btn btn-buy">Check current pricing →</a>
+      </div>
+    </section>
+  </article>
+
+</body>
+</html>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; line-height: 1.7; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  .navbar { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 20px 0; }
+  .logo { font-size: 22px; font-weight: 700; text-decoration: none; color: #0f172a; }
+  .logo span { color: #b91c1c; }
+  
+  .article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  .article-header { margin-bottom: 30px; }
+  .category-tag { color: #b91c1c; font-weight: 700; text-transform: uppercase; font-size: 12px; }
+  h1 { font-size: 36px; margin: 10px 0; line-height: 1.2; }
+  .byline { color: #64748b; font-size: 14px; }
+  
+  .disclosure-box { background: #f1f5f9; border-left: 4px solid #64748b; padding: 15px; margin: 25px 0; border-radius: 0 6px 6px 0; font-size: 14px; }
+  h2 { margin: 40px 0 20px 0; font-size: 24px; }
+  
+  .specs-table { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 20px 0; }
+  .specs-table h4 { margin-bottom: 10px; color: #0f172a; }
+  .specs-table ul { list-style: none; }
+  .specs-table li { margin-bottom: 8px; font-size: 15px; }
+
+  .action-box { background: #fff1f2; border: 2px dashed #b91c1c; padding: 25px; border-radius: 8px; margin: 30px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+  @media (max-width: 600px) { .action-box { flex-direction: column; text-align: center; } }
+  .action-box h3 { font-size: 18px; margin-bottom: 5px; }
+  .action-box p { font-size: 14px; color: #475569; }
+  
+  .btn-buy { display: inline-block; background: #f59e0b; color: #0f172a; font-weight: 600; text-decoration: none; padding: 14px 24px; border-radius: 6px; white-space: nowrap; transition: background 0.2s; }
+  .btn-buy:hover { background: #d97706; }
+</style>
