@@ -1,0 +1,10 @@
+# Cloudflare Pages Headers Configuration
+# Prevent indexing on preview/staging deployments
+
+# Apply noindex to all preview/staging deployments
+https://*.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Production domain - allow indexing
+https://laptopvette.com/*
+  Cache-Control: public, max-age=3600
