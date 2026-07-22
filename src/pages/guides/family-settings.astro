@@ -4,10 +4,15 @@ import BaseHead from '../../components/BaseHead.astro';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <BaseHead title="Family Settings: Parental Controls & Safe Laptops - LaptopVette" description="How to configure family safety and parental controls across Windows, macOS, and ChromeOS. Practical tips for families and shared devices." path="/guides/family-settings" />
+  <BaseHead title="Family Settings: Parental Controls & Safe Laptops - LaptopVette" description="How to configure family safety and parental controls across Windows, macOS, and ChromeOS. Practical tips for families and shared devices." path="/guides/family-settings" type="article" />
 </head>
 <body>
-  <main class="container" style="padding:40px 20px;">
+
+  <nav class="navbar">
+    <div class="container"><a href="/" class="logo">Laptop<span>Vette</span></a></div>
+  </nav>
+
+  <article class="article-container">
     <h1>Family Settings: Parental Controls & Shared Device Best Practices</h1>
     <p>Setting up laptops for families involves more than just buying durable hardware — it requires configuring the device so parents can manage access, protect privacy, and ensure safe browsing for children.</p>
 
@@ -51,6 +56,27 @@ import BaseHead from '../../components/BaseHead.astro';
     </section>
 
     <p style="margin-top:20px;">For device-specific setup walk-throughs, consult the OEM support pages or reach out if you'd like step-by-step guides for a particular laptop model.</p>
-  </main>
+  </article>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; line-height: 1.85; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Navigation */
+    .navbar { background: #ffffff; border-bottom: 1px solid #d1d5db; position: sticky; top: 0; z-index: 100; }
+    .navbar .container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+    .logo { font-size: 24px; font-weight: 700; color: #0f172a; text-decoration: none; text-transform: uppercase; letter-spacing: -0.5px; }
+    .logo span { color: #b91c1c; }
+    
+    /* Article Container */
+    .article-container { max-width: 840px; margin: 40px auto; padding: 40px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; }
+    .article-container h1 { font-size: 32px; margin-bottom: 20px; line-height: 1.25; color: #0f172a; }
+    .article-container > p { margin-bottom: 1.4em; line-height: 1.85; text-align: justify; }
+    .article-container h2 { font-size: 22px; margin: 56px 0 22px 0; border-left: 4px solid #b91c1c; padding-left: 15px; }
+    .article-container section { margin-bottom: 2em; }
+    .article-container ul { list-style: disc inside; }
+    .article-container li { margin-bottom: 12px; line-height: 1.6; }
+  </style>
 </body>
 </html>
